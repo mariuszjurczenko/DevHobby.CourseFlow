@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C2788473-B4AE-4E8B-9A39-49A0250043B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{06F30FF4-2EF3-4FDE-A386-87D78BFB1826}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1E266E99-6C0F-418A-9CA4-1073625DFA76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D2ADBBD9-F856-4265-9058-92C98A7E2744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EF978645-188A-4944-8C0A-CC8272250535}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{C05CFD82-35FF-4B88-9516-435A0F5F385E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHobby.CourseFlow.Domain", "DevHobby.CourseFlow.Domain\DevHobby.CourseFlow.Domain.csproj", "{A794B763-BFE5-4DC8-BC06-9C496405BCCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A794B763-BFE5-4DC8-BC06-9C496405BCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A794B763-BFE5-4DC8-BC06-9C496405BCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A794B763-BFE5-4DC8-BC06-9C496405BCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A794B763-BFE5-4DC8-BC06-9C496405BCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E266E99-6C0F-418A-9CA4-1073625DFA76} = {C2788473-B4AE-4E8B-9A39-49A0250043B0}
+		{D2ADBBD9-F856-4265-9058-92C98A7E2744} = {C2788473-B4AE-4E8B-9A39-49A0250043B0}
+		{EF978645-188A-4944-8C0A-CC8272250535} = {C2788473-B4AE-4E8B-9A39-49A0250043B0}
+		{C05CFD82-35FF-4B88-9516-435A0F5F385E} = {C2788473-B4AE-4E8B-9A39-49A0250043B0}
+		{A794B763-BFE5-4DC8-BC06-9C496405BCCC} = {D2ADBBD9-F856-4265-9058-92C98A7E2744}
+	EndGlobalSection
+EndGlobal
