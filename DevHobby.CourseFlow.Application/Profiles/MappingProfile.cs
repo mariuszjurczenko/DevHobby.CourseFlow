@@ -9,5 +9,7 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         CreateMap<Course, CourseListVm>().ReverseMap();
+        CreateMap<Course, CourseDetailVm>().ReverseMap();
+        CreateMap<Category, CategoryDto>().ReverseMap();
     }
 }
