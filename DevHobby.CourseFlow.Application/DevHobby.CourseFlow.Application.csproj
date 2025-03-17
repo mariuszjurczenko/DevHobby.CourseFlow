@@ -15,4 +15,8 @@
 	  <ProjectReference Include="..\DevHobby.CourseFlow.Domain\DevHobby.CourseFlow.Domain.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Features\Courses\Commands\CreateCourse\" />
+	</ItemGroup>
+
 </Project>

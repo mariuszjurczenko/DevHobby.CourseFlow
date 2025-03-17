@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using DevHobby.CourseFlow.Application.Features.Courses;
+using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCourseDetail;
+using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCoursesList;
 using DevHobby.CourseFlow.Domain.Entities;
 
 namespace DevHobby.CourseFlow.Application.Profiles;

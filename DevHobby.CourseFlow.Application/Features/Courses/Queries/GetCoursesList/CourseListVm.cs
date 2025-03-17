@@ -1,4 +1,4 @@
-﻿namespace DevHobby.CourseFlow.Application.Features.Courses;
+﻿namespace DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCoursesList;
 
 public class CourseListVm
 {
