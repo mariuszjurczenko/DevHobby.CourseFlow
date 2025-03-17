@@ -6,4 +6,8 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\DevHobby.CourseFlow.Domain\DevHobby.CourseFlow.Domain.csproj" />
+	</ItemGroup>
+
 </Project>
