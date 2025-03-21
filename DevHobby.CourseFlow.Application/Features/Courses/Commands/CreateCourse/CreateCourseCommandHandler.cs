@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DevHobby.CourseFlow.Application.Contracts.Persistence;
+using DevHobby.CourseFlow.Application.Exceptions;
 using DevHobby.CourseFlow.Domain.Entities;
 using MediatR;
 
@@ -18,8 +19,11 @@ public class CreateCourseCommandHandler : IRequestHandler<CreateCourseCommand, G
 
     public async Task<Guid> Handle(CreateCourseCommand request, CancellationToken cancellationToken)
     {
-        var validator = new CreateCourseCommandValidator();
+        var validator = new CreateCourseCommandValidator(_courseRepository);
         var validationResult = await validator.ValidateAsync(request, cancellationToken);
+
+        if (validationResult.Errors.Count > 0)
+            throw new ValidationException(validationResult);
 
         var course = _mapper.Map<Course>(request);
 
