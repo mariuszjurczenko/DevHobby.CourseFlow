@@ -1,6 +1,11 @@
-﻿namespace DevHobby.CourseFlow.Application.Features.Categories.Commands.CreateCateogry
+﻿using DevHobby.CourseFlow.Application.Responses;
+
+namespace DevHobby.CourseFlow.Application.Features.Categories.Commands.CreateCateogry;
+
+public class CreateCategoryCommandResponse : BaseResponse
 {
-    public class CreateCategoryCommandResponse
-    {
-    }
+    public CreateCategoryCommandResponse() : base()
+    {}
+
+    public CreateCategoryDto Category { get; set; }
 }
