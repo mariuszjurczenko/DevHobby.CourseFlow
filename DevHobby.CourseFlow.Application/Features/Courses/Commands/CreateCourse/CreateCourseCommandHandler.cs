@@ -18,6 +18,9 @@ public class CreateCourseCommandHandler : IRequestHandler<CreateCourseCommand, G
 
     public async Task<Guid> Handle(CreateCourseCommand request, CancellationToken cancellationToken)
     {
+        var validator = new CreateCourseCommandValidator();
+        var validationResult = await validator.ValidateAsync(request, cancellationToken);
+
         var course = _mapper.Map<Course>(request);
 
         course = await _courseRepository.AddAsync(course);
