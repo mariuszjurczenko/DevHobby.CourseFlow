@@ -5,7 +5,7 @@ namespace DevHobby.CourseFlow.Persistence.Repositories;
 
 public class BaseRepository<T> : IAsyncRepository<T> where T : class
 {
-    private readonly DevHobbyDbContext _dbContext;
+    protected readonly DevHobbyDbContext _dbContext;
 
     public BaseRepository(DevHobbyDbContext dbContext)
     {
