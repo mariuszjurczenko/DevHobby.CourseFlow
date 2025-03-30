@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHobby.CourseFlow.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHobby.CourseFlow.Persistence", "DevHobby.CourseFlow.Persistence\DevHobby.CourseFlow.Persistence.csproj", "{8E82ED9B-8FC3-493F-961F-8F14A8EE6815}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHobby.CourseFlow.Infrastructure", "DevHobby.CourseFlow.Infrastructure\DevHobby.CourseFlow.Infrastructure.csproj", "{91DFB9FC-88EA-43FC-AD0D-82B353738317}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{8E82ED9B-8FC3-493F-961F-8F14A8EE6815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E82ED9B-8FC3-493F-961F-8F14A8EE6815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E82ED9B-8FC3-493F-961F-8F14A8EE6815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DFB9FC-88EA-43FC-AD0D-82B353738317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DFB9FC-88EA-43FC-AD0D-82B353738317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DFB9FC-88EA-43FC-AD0D-82B353738317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DFB9FC-88EA-43FC-AD0D-82B353738317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +62,9 @@ Global
 		{A794B763-BFE5-4DC8-BC06-9C496405BCCC} = {D2ADBBD9-F856-4265-9058-92C98A7E2744}
 		{5B4C7646-84DE-4DDA-A092-CBC45DEB4557} = {D2ADBBD9-F856-4265-9058-92C98A7E2744}
 		{8E82ED9B-8FC3-493F-961F-8F14A8EE6815} = {EF978645-188A-4944-8C0A-CC8272250535}
+		{91DFB9FC-88EA-43FC-AD0D-82B353738317} = {EF978645-188A-4944-8C0A-CC8272250535}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96FA4A1B-D90F-43F8-840C-6F35E629ED49}
 	EndGlobalSection
 EndGlobal
