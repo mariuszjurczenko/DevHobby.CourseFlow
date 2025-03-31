@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevHobby.CourseFlow.Application\DevHobby.CourseFlow.Application.csproj" />
+    <ProjectReference Include="..\DevHobby.CourseFlow.Infrastructure\DevHobby.CourseFlow.Infrastructure.csproj" />
+    <ProjectReference Include="..\DevHobby.CourseFlow.Persistence\DevHobby.CourseFlow.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>
