@@ -1,6 +1,8 @@
 ﻿using DevHobby.CourseFlow.Application;
 using DevHobby.CourseFlow.Infrastructure;
 using DevHobby.CourseFlow.Persistence;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace DevHobby.CourseFlow.Api;
 
@@ -33,5 +35,25 @@ public static class StartupExtensions
         app.UseHttpsRedirection();
         app.MapControllers();
         return app; 
+    }
+
+    public static async Task ResetDatabaseAsync(this WebApplication app)
+    {
+        using var scope = app.Services.CreateScope();
+
+        try
+        {
+            var context = scope.ServiceProvider.GetService<DevHobbyDbContext>();
+
+            if (context != null)
+            {
+                await context.Database.EnsureDeletedAsync();
+                await context.Database.MigrateAsync();
+            }
+        }
+        catch (Exception)
+        {
+            // logowanie dodamy pozniej
+        }
     }
 }
