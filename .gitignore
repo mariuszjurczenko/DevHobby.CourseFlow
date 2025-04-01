@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/DevHobby.CourseFlow.Api/CourseFlow.db
+/DevHobby.CourseFlow.Api/CourseFlow.db-shm
+/DevHobby.CourseFlow.Api/CourseFlow.db-wal

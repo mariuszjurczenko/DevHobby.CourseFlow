@@ -20,5 +20,6 @@ public class MappingProfile : Profile
         CreateMap<Category, CategoryCourseListVm>();
         CreateMap<Course, CreateCourseCommand>().ReverseMap();
         CreateMap<Course, UpdateCourseCommand>().ReverseMap();
+        CreateMap<Course, CategoryCourseDto>().ReverseMap();
     }
 }
