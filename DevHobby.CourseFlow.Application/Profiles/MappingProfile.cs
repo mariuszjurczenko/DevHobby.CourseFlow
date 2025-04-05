@@ -4,6 +4,7 @@ using DevHobby.CourseFlow.Application.Features.Categories.Queries.GetCategoriesL
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.CreateCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.UpdateCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCourseDetail;
+using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCoursesExport;
 using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCoursesList;
 using DevHobby.CourseFlow.Domain.Entities;
 
@@ -21,5 +22,6 @@ public class MappingProfile : Profile
         CreateMap<Course, CreateCourseCommand>().ReverseMap();
         CreateMap<Course, UpdateCourseCommand>().ReverseMap();
         CreateMap<Course, CategoryCourseDto>().ReverseMap();
+        CreateMap<Course, CourseExportDto>().ReverseMap();
     }
 }

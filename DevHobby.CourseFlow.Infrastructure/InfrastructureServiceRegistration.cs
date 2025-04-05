@@ -1,5 +1,6 @@
 ﻿using DevHobby.CourseFlow.Application.Contracts.Infrastructure;
 using DevHobby.CourseFlow.Application.Models;
+using DevHobby.CourseFlow.Infrastructure.FileExport;
 using DevHobby.CourseFlow.Infrastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +13,7 @@ public static class InfrastructureServiceRegistration
     {
         services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
         services.AddTransient<IEmailService, EmailService>();
+        services.AddTransient<ICsvExporter, CsvExporter>();
 
         return services;
     }
