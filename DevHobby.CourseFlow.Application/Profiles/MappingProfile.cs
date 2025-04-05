@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DevHobby.CourseFlow.Application.Features.Categories.Commands.CreateCateogry;
 using DevHobby.CourseFlow.Application.Features.Categories.Queries.GetCategoriesList;
 using DevHobby.CourseFlow.Application.Features.Categories.Queries.GetCategoriesListWithCourses;
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.CreateCourse;
@@ -23,5 +24,7 @@ public class MappingProfile : Profile
         CreateMap<Course, UpdateCourseCommand>().ReverseMap();
         CreateMap<Course, CategoryCourseDto>().ReverseMap();
         CreateMap<Course, CourseExportDto>().ReverseMap();
+
+        CreateMap<Category, CreateCategoryDto>().ReverseMap();
     }
 }

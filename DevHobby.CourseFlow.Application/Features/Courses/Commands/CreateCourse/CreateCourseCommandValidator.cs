@@ -29,6 +29,6 @@ public class CreateCourseCommandValidator : AbstractValidator<CreateCourseComman
 
     private async Task<bool> CourseNameAndDateUnique(CreateCourseCommand command, CancellationToken token)
     {
-        return await _courseRepository.IsCourseNameAndDateUnique(command.Name, command.PublicationDate);
+        return !await _courseRepository.IsCourseNameAndDateUnique(command.Name, command.PublicationDate);
     }
 }
