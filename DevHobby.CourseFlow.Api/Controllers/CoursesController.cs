@@ -1,4 +1,5 @@
-﻿using DevHobby.CourseFlow.Application.Features.Courses.Commands.CreateCourse;
+﻿using DevHobby.CourseFlow.Api.Utility;
+using DevHobby.CourseFlow.Application.Features.Courses.Commands.CreateCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.DeleteCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.UpdateCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCourseDetail;
@@ -65,6 +66,7 @@ public class CoursesController : Controller
     }
 
     [HttpGet("export", Name ="ExportCourses")]
+    [FileResultContentType("text/csv")]
     public async Task<FileResult> ExportCourses()
     {
         var fileDto = await _mediator.Send(new GetCoursesExportQuery());
