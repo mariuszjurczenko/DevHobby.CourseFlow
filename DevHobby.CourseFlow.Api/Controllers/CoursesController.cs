@@ -2,6 +2,7 @@
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.DeleteCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Commands.UpdateCourse;
 using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCourseDetail;
+using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCoursesExport;
 using DevHobby.CourseFlow.Application.Features.Courses.Queries.GetCoursesList;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -61,5 +62,13 @@ public class CoursesController : Controller
         var deleteCourseCommand = new DeleteCourseCommand() { CourseId = id };
         await _mediator.Send(deleteCourseCommand);
         return NoContent();
+    }
+
+    [HttpGet("export", Name ="ExportCourses")]
+    public async Task<FileResult> ExportCourses()
+    {
+        var fileDto = await _mediator.Send(new GetCoursesExportQuery());
+
+        return File(fileDto.Data, fileDto.ContentType, fileDto.CourseExportFileName);
     }
 }
