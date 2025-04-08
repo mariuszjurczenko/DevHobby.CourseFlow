@@ -1,6 +1,8 @@
-﻿namespace DevHobby.CourseFlow.Domain.Entities;
+﻿using DevHobby.CourseFlow.Domain.Common;
 
-public class Order
+namespace DevHobby.CourseFlow.Domain.Entities;
+
+public class Order : AuditableEntity
 {
     public Guid OrderId { get; set; }
     public Guid UserId { get; set; }

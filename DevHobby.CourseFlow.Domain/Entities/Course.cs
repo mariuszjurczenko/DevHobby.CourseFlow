@@ -1,6 +1,8 @@
-﻿namespace DevHobby.CourseFlow.Domain.Entities;
+﻿using DevHobby.CourseFlow.Domain.Common;
 
-public class Course
+namespace DevHobby.CourseFlow.Domain.Entities;
+
+public class Course : AuditableEntity
 {
     public Guid CourseId { get; set; }
     public string Name { get; set; } = string.Empty;
